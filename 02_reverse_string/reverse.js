@@ -1,7 +1,7 @@
 export function reverse(string) {
     let a = string.split('');
     let len = a.length - 1;
-    for (let i = 0; i < len / 2; i++) {
+    for (let i = 0; i < Math.floor(a.length / 2); i++) {
         let temp = a[i];
         a[i] = a[len - i];
         a[len - i] = temp;

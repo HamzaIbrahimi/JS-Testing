@@ -18,3 +18,9 @@ test('Capitalizes any string', () => {
     let word = 'mississippi';
     expect(capitalize(word)).toBe('Mississippi');
 });
+
+test('Non alphabetical letters remain the same', () => {
+    let word = '12Hey'
+    expect(capitalize(word)).toBe('12Hey');
+
+})
